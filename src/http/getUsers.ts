@@ -11,7 +11,7 @@ export async function getUsers(): Promise<IUser[]> {
       return users;
     }
     return [];
-  } catch (e){
+  } catch {
     toast("Houve uma falha ao buscar os usuarios!", {
       style: {
         backgroundColor: colors.red[600],
